@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "formula": "A -> A",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.045,
+    "improved": true,
+    "improved_ms": 0.027
+  },
+  {
+    "id": 2,
+    "formula": "(A & B) -> A",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.04,
+    "improved": true,
+    "improved_ms": 0.029
+  },
+  {
+    "id": 3,
+    "formula": "A -> (A | B)",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.031,
+    "improved": true,
+    "improved_ms": 0.023
+  },
+  {
+    "id": 4,
+    "formula": "(A -> B) -> ((C -> A) -> (C -> B))",
+    "tag": "medium",
+    "baseline": true,
+    "baseline_ms": 0.09,
+    "improved": true,
+    "improved_ms": 0.076
+  },
+  {
+    "id": 5,
+    "formula": "(~A -> A) -> A",
+    "tag": "medium",
+    "baseline": true,
+    "baseline_ms": 0.046,
+    "improved": true,
+    "improved_ms": 0.042
+  },
+  {
+    "id": 6,
+    "formula": "!x. P(x) -> ?x. P(x)",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.105,
+    "improved": true,
+    "improved_ms": 0.088
+  },
+  {
+    "id": 7,
+    "formula": "!x. P(x) -> !y. P(y)",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.082,
+    "improved": true,
+    "improved_ms": 0.061
+  },
+  {
+    "id": 8,
+    "formula": "!x. (P(x) -> Q(x)) -> (!x. P(x) -> !x. Q(x))",
+    "tag": "medium",
+    "baseline": true,
+    "baseline_ms": 0.22,
+    "improved": true,
+    "improved_ms": 0.206
+  },
+  {
+    "id": 9,
+    "formula": "?x. !y. R(x,y) -> !y. ?x. R(x,y)",
+    "tag": "medium",
+    "baseline": true,
+    "baseline_ms": 0.282,
+    "improved": true,
+    "improved_ms": 0.311
+  },
+  {
+    "id": 10,
+    "formula": "!x. (P(x) & Q(x)) -> !x. P(x)",
+    "tag": "easy",
+    "baseline": true,
+    "baseline_ms": 0.11,
+    "improved": true,
+    "improved_ms": 0.091
+  },
+  {
+    "id": 11,
+    "formula": "!x. (P(x) & Q(x)) -> (?y. P(y) & ?z. Q(z))",
+    "tag": "medium",
+    "baseline": true,
+    "baseline_ms": 0.169,
+    "improved": true,
+    "improved_ms": 0.197
+  },
+  {
+    "id": 12,
+    "formula": "?x. P(x) -> !x. P(x)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 0.091,
+    "improved": false,
+    "improved_ms": 0.071
+  },
+  {
+    "id": 13,
+    "formula": "!x. ?y. R(x,y) -> ?y. !x. R(x,y)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 1.367,
+    "improved": false,
+    "improved_ms": 7.674
+  },
+  {
+    "id": 14,
+    "formula": "!x. P(x) -> P(a)",
+    "tag": "depends-on-a",
+    "baseline": true,
+    "baseline_ms": 0.121,
+    "improved": true,
+    "improved_ms": 0.081
+  },
+  {
+    "id": 15,
+    "formula": "(A -> B) -> A",
+    "tag": "invalid",
+    "baseline": false,
+    "baseline_ms": 0.078,
+    "improved": false,
+    "improved_ms": 0.087
+  },
+  {
+    "id": 16,
+    "formula": "!x. P(x) -> ?y. Q(y)",
+    "tag": "invalid",
+    "baseline": false,
+    "baseline_ms": 2.204,
+    "improved": false,
+    "improved_ms": 2.914
+  },
+  {
+    "id": 17,
+    "formula": "(P1(x1) -> P2(x2)) -> (P1(x1) -> P2(x2))",
+    "tag": "hard-easy",
+    "baseline": true,
+    "baseline_ms": 0.048,
+    "improved": true,
+    "improved_ms": 0.026
+  },
+  {
+    "id": 18,
+    "formula": "!x. (P1(x1) -> P2(x2)) -> ?y. Q(y)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 5.829,
+    "improved": false,
+    "improved_ms": 5.015
+  },
+  {
+    "id": 19,
+    "formula": "(P1(x1) -> P2(x2) -> P3(x3)) -> (P1(x1) -> P2(x2) -> P3(x3))",
+    "tag": "hard-easy",
+    "baseline": true,
+    "baseline_ms": 0.064,
+    "improved": true,
+    "improved_ms": 0.032
+  },
+  {
+    "id": 20,
+    "formula": "!x. (P1(x1) -> P2(x2) -> P3(x3)) -> ?y. Q(y)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 18.066,
+    "improved": false,
+    "improved_ms": 22.467
+  },
+  {
+    "id": 21,
+    "formula": "(P1(x1) -> P2(x2) -> P3(x3) -> P4(x4)) -> (P1(x1) -> P2(x2) -> P3(x3) -> P4(x4))",
+    "tag": "hard-easy",
+    "baseline": true,
+    "baseline_ms": 0.129,
+    "improved": true,
+    "improved_ms": 0.04
+  },
+  {
+    "id": 22,
+    "formula": "!x. (P1(x1) -> P2(x2) -> P3(x3) -> P4(x4)) -> ?y. Q(y)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 32.533,
+    "improved": false,
+    "improved_ms": 46.577
+  },
+  {
+    "id": 23,
+    "formula": "(P1(x1) -> P2(x2) -> P3(x3) -> P4(x4) -> P5(x5)) -> (P1(x1) -> P2(x2) -> P3(x3) -> P4(x4) -> P5(x5))",
+    "tag": "hard-easy",
+    "baseline": true,
+    "baseline_ms": 0.252,
+    "improved": true,
+    "improved_ms": 0.055
+  },
+  {
+    "id": 24,
+    "formula": "!x. (P1(x1) -> P2(x2) -> P3(x3) -> P4(x4) -> P5(x5)) -> ?y. Q(y)",
+    "tag": "hard-invalid",
+    "baseline": false,
+    "baseline_ms": 45.084,
+    "improved": false,
+    "improved_ms": 63.513
+  }
+]
